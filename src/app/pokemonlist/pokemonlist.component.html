@@ -1,0 +1,12 @@
+<img src="https://25.media.tumblr.com/a1e87d2030a73aee16661e8807da6c1d/tumblr_mkhnmmFwaA1rxvkeso1_500.gif"  width="500" id="logocentral">
+
+<div class="pokemon-list">
+<app-pokemon-card
+  *ngFor="let pokemon of pokemonService.pokemons; index as i"
+  [pokemon]="pokemon.name"
+  [numero]="i + 1"
+></app-pokemon-card>
+
+</div>
+
+<!-- <div *ngFor="let pokemon of pokemons">Pokémon: {{ pokemon }}</div> -->
